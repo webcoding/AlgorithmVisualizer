@@ -4,7 +4,6 @@ const app = require('../../app');
 const Server = require('../../server');
 const Toast = require('../toast');
 const TopMenu = require('../top_menu');
-const create = require('../../create');
 
 module.exports = () => {
 
@@ -33,7 +32,6 @@ module.exports = () => {
   const $btnPause = $('#btn_pause');
   const $btnPrev = $('#btn_prev');
   const $btnNext = $('#btn_next');
-  const $btnGenerate = $('#btn_generate');
 
   // initially, control buttons are disabled
   TopMenu.disableFlowControl();
@@ -73,10 +71,6 @@ module.exports = () => {
     $btnPause.addClass('active');
     app.getTracerManager().pauseStep();
     app.getTracerManager().nextStep();
-  });
-
-  $btnGenerate.click(() => {
-     create.init();
   });
 
 };
