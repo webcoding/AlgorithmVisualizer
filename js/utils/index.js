@@ -14,8 +14,8 @@ const getFileDir = (category, algorithm, file) => {
   return `./algorithm/${category}/${algorithm}/${file}/`;
 };
 
-const renderMathJax = () =>{
-    MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+const renderMathJax = () => {
+  MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
 };
 
 module.exports = {

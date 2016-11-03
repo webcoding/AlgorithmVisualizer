@@ -44,9 +44,9 @@ $(() => {
     DOM.addCategories();
 
     //enable search feature
-    DOM.enableSearch ();
+    DOM.enableSearch();
     //enable fullscreen feature
-    DOM.enableFullScreen ();
+    DOM.enableFullScreen();
 
     // determine if the app is loading a pre-existing scratch-pad
     // or the home page
